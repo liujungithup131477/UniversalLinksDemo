@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import <Foundation/Foundation.h>
+#import "WhiteDogViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,26 +22,49 @@
     return YES;
 }
 
-- (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray * _Nullable))restorationHandler{
+    
+    if ([userActivity.activityType isEqualToString:NSUserActivityTypeBrowsingWeb]) {
+        NSURL *webpageURL = userActivity.webpageURL;
+        
+        if (![self handleUniversalLinkWithURL:webpageURL]) {
+            NSURL *webUrl = [NSURL URLWithString:@"http://www.pptv.com/"];
+            [[UIApplication sharedApplication] openURL:webUrl];
+        }
+    }
+    return YES;
 }
 
-- (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-}
+- (BOOL)handleUniversalLinkWithURL:(NSURL *)url {
 
-- (void)applicationWillEnterForeground:(UIApplication *)application {
-    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
-}
+    NSURLComponents *components = [NSURLComponents componentsWithURL:url resolvingAgainstBaseURL:YES];
+    if (components == nil) {
+        return NO;
+    }
+    NSString *host = components.host;
+    if (host == nil) {
+        return NO;
+    }
+    NSArray *pathComponents = components.path.pathComponents;
+    if (pathComponents == nil) {
+        return NO;
+    }
+    
 
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    if ([host  isEqualToString:@"aplman.com"]) {
+        if (pathComponents.count >= 2) {
+            if ([pathComponents[0] isEqualToString:@"/"]&[pathComponents[1] isEqualToString:@"white"]) {
+                
+                WhiteDogViewController *vc = [WhiteDogViewController whiteDog];
+                self.window.rootViewController = vc;
+                
+                return YES;
+            }
+            return NO;
+        }
+        return NO;
+    }else {
+        return NO;
+    }
 }
-
-- (void)applicationWillTerminate:(UIApplication *)application {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-}
-
 @end

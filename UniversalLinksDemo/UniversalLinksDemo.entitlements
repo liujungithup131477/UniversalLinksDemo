@@ -4,8 +4,12 @@
 <dict>
 	<key>com.apple.developer.associated-domains</key>
 	<array>
-		<string>applinks:www.pptv.com</string>
-		<string>applinks: pptv.iphoneapp</string>
+		<string>applinks: www.aplman.com</string>
+		<string>applinks: aplman.com</string>
+	</array>
+	<key>com.apple.security.application-groups</key>
+	<array>
+		<string>group.com.pp</string>
 	</array>
 </dict>
 </plist>
