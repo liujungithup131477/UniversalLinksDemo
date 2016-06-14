@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2FN-e6-83O">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--狗狗-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="YellowViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,88 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="gg" translatesAutoresizingMaskIntoConstraints="NO" id="BQB-Fq-GHv">
+                                <rect key="frame" x="-60" y="0.0" width="720" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FQ7-pp-UV1">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <state key="normal" title="喜欢我，就点一下我的鼻子吧！"/>
+                                <connections>
+                                    <action selector="link:" destination="BYZ-38-t0r" eventType="touchUpInside" id="grS-4Z-i4s"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FQ7-pp-UV1" secondAttribute="bottom" id="6SZ-i4-gGk"/>
+                            <constraint firstItem="FQ7-pp-UV1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7fE-wI-EnG"/>
+                            <constraint firstItem="FQ7-pp-UV1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="AdF-uX-gEs"/>
+                            <constraint firstItem="FQ7-pp-UV1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="Epk-R6-uB7"/>
+                            <constraint firstItem="BQB-Fq-GHv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Eyj-Er-Ojh"/>
+                            <constraint firstItem="BQB-Fq-GHv" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottomMargin" id="IAt-0Z-vAF"/>
+                            <constraint firstItem="BQB-Fq-GHv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="W3f-dH-8tO"/>
+                            <constraint firstItem="FQ7-pp-UV1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="co0-4i-MWu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FQ7-pp-UV1" secondAttribute="trailing" constant="-20" id="rE7-R1-5eE"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="狗狗" id="iiS-IC-5Do"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="772" y="377"/>
+        </scene>
+        <!--White Dog View Controller-->
+        <scene sceneID="N7z-He-X6z">
+            <objects>
+                <viewController storyboardIdentifier="white" id="QSw-tR-xE5" customClass="WhiteDogViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KjU-dV-N9o"/>
+                        <viewControllerLayoutGuide type="bottom" id="FVn-i3-auO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6SV-2x-KpB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gougou" translatesAutoresizingMaskIntoConstraints="NO" id="Bza-AL-E9o">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Bza-AL-E9o" firstAttribute="top" secondItem="6SV-2x-KpB" secondAttribute="topMargin" id="6yO-AQ-ixT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Bza-AL-E9o" secondAttribute="trailing" constant="-20" id="CTf-1Z-zcD"/>
+                            <constraint firstItem="Bza-AL-E9o" firstAttribute="leading" secondItem="6SV-2x-KpB" secondAttribute="leadingMargin" constant="-20" id="Gev-5u-Tsg"/>
+                            <constraint firstItem="FVn-i3-auO" firstAttribute="top" secondItem="Bza-AL-E9o" secondAttribute="bottom" id="lhs-KE-iju"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="JVh-Kv-hNE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gzu-9c-xcQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1305" y="433"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gAt-kg-mjM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2FN-e6-83O" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6r7-fp-O6j">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="oUX-fG-wQx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tu3-Ws-CvX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="63" y="452"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="gg" width="720" height="600"/>
+        <image name="gougou" width="470" height="285"/>
+    </resources>
 </document>
