@@ -1,0 +1,15 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "K259LN949A.com.pptv.iphoneapp.UniversalLinksDemo",
+                "paths": [ "/wwdc/news/", "/videos/wwdc/2015/*" ]
+            },
+            {
+                "appID": "TeamID.BundleID2",
+                "paths": [ "*" ]
+            }
+        ]
+    }
+}
