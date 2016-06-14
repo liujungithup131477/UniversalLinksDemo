@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2827CF551D1001BC009D843B /* WhiteDogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2827CF541D1001BC009D843B /* WhiteDogViewController.m */; };
+		2827CF581D1001DF009D843B /* YellowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2827CF571D1001DF009D843B /* YellowViewController.m */; };
 		288374331D0551D600EB8A62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 288374321D0551D600EB8A62 /* main.m */; };
 		288374361D0551D600EB8A62 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 288374351D0551D600EB8A62 /* AppDelegate.m */; };
 		288374391D0551D600EB8A62 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 288374381D0551D600EB8A62 /* ViewController.m */; };
@@ -35,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2827CF531D1001BC009D843B /* WhiteDogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteDogViewController.h; sourceTree = "<group>"; };
+		2827CF541D1001BC009D843B /* WhiteDogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteDogViewController.m; sourceTree = "<group>"; };
+		2827CF561D1001DF009D843B /* YellowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YellowViewController.h; sourceTree = "<group>"; };
+		2827CF571D1001DF009D843B /* YellowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YellowViewController.m; sourceTree = "<group>"; };
 		2883742E1D0551D600EB8A62 /* UniversalLinksDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniversalLinksDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		288374321D0551D600EB8A62 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		288374341D0551D600EB8A62 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -105,6 +111,10 @@
 				2883746C1D0552AF00EB8A62 /* UniversalLinksDemo.entitlements */,
 				288374341D0551D600EB8A62 /* AppDelegate.h */,
 				288374351D0551D600EB8A62 /* AppDelegate.m */,
+				2827CF531D1001BC009D843B /* WhiteDogViewController.h */,
+				2827CF541D1001BC009D843B /* WhiteDogViewController.m */,
+				2827CF561D1001DF009D843B /* YellowViewController.h */,
+				2827CF571D1001DF009D843B /* YellowViewController.m */,
 				288374371D0551D600EB8A62 /* ViewController.h */,
 				288374381D0551D600EB8A62 /* ViewController.m */,
 				2883743A1D0551D600EB8A62 /* Main.storyboard */,
@@ -211,6 +221,9 @@
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = K259LN949A;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
 							com.apple.SafariKeychain = {
 								enabled = 1;
 							};
@@ -279,8 +292,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				288374391D0551D600EB8A62 /* ViewController.m in Sources */,
+				2827CF581D1001DF009D843B /* YellowViewController.m in Sources */,
 				288374361D0551D600EB8A62 /* AppDelegate.m in Sources */,
 				288374331D0551D600EB8A62 /* main.m in Sources */,
+				2827CF551D1001BC009D843B /* WhiteDogViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +438,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = UniversalLinksDemo/UniversalLinksDemo.entitlements;
 				INFOPLIST_FILE = UniversalLinksDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pptv.iphoneapp.UniversalLinksDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -435,6 +451,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = UniversalLinksDemo/UniversalLinksDemo.entitlements;
 				INFOPLIST_FILE = UniversalLinksDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pptv.iphoneapp.UniversalLinksDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -506,6 +523,7 @@
 				2883745D1D0551D600EB8A62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2883745E1D0551D600EB8A62 /* Build configuration list for PBXNativeTarget "UniversalLinksDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +532,7 @@
 				288374601D0551D600EB8A62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		288374611D0551D600EB8A62 /* Build configuration list for PBXNativeTarget "UniversalLinksDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +541,7 @@
 				288374631D0551D600EB8A62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
