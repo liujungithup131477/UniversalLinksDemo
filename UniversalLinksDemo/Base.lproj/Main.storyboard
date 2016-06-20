@@ -31,15 +31,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FQ7-pp-UV1" secondAttribute="bottom" id="6SZ-i4-gGk"/>
-                            <constraint firstItem="FQ7-pp-UV1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7fE-wI-EnG"/>
-                            <constraint firstItem="FQ7-pp-UV1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="AdF-uX-gEs"/>
-                            <constraint firstItem="FQ7-pp-UV1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="Epk-R6-uB7"/>
-                            <constraint firstItem="BQB-Fq-GHv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Eyj-Er-Ojh"/>
-                            <constraint firstItem="BQB-Fq-GHv" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottomMargin" id="IAt-0Z-vAF"/>
-                            <constraint firstItem="BQB-Fq-GHv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="W3f-dH-8tO"/>
-                            <constraint firstItem="FQ7-pp-UV1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="co0-4i-MWu"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="FQ7-pp-UV1" secondAttribute="trailing" constant="-20" id="rE7-R1-5eE"/>
+                            <constraint firstItem="BQB-Fq-GHv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-80" id="4e6-9i-eXV"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FQ7-pp-UV1" secondAttribute="bottom" id="9yT-YC-FJD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FQ7-pp-UV1" secondAttribute="trailing" constant="-20" id="DLl-ee-Rfy"/>
+                            <constraint firstItem="FQ7-pp-UV1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="aZj-Ta-zfW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BQB-Fq-GHv" secondAttribute="trailing" constant="-80" id="ajo-HK-p3t"/>
+                            <constraint firstItem="BQB-Fq-GHv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="cU5-jh-4Yl"/>
+                            <constraint firstItem="FQ7-pp-UV1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="dlh-Hx-QlO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BQB-Fq-GHv" secondAttribute="bottom" id="hCr-cG-oXp"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="狗狗" id="iiS-IC-5Do"/>

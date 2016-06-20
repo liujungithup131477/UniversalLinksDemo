@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2827CF551D1001BC009D843B /* WhiteDogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2827CF541D1001BC009D843B /* WhiteDogViewController.m */; };
 		2827CF581D1001DF009D843B /* YellowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2827CF571D1001DF009D843B /* YellowViewController.m */; };
+		2827CF631D12493C009D843B /* wangyi.html in Resources */ = {isa = PBXBuildFile; fileRef = 2827CF621D12493C009D843B /* wangyi.html */; };
 		288374331D0551D600EB8A62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 288374321D0551D600EB8A62 /* main.m */; };
 		288374361D0551D600EB8A62 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 288374351D0551D600EB8A62 /* AppDelegate.m */; };
 		288374391D0551D600EB8A62 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 288374381D0551D600EB8A62 /* ViewController.m */; };
@@ -41,6 +42,7 @@
 		2827CF541D1001BC009D843B /* WhiteDogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteDogViewController.m; sourceTree = "<group>"; };
 		2827CF561D1001DF009D843B /* YellowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YellowViewController.h; sourceTree = "<group>"; };
 		2827CF571D1001DF009D843B /* YellowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YellowViewController.m; sourceTree = "<group>"; };
+		2827CF621D12493C009D843B /* wangyi.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = wangyi.html; sourceTree = "<group>"; };
 		2883742E1D0551D600EB8A62 /* UniversalLinksDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniversalLinksDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		288374321D0551D600EB8A62 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		288374341D0551D600EB8A62 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				2827CF571D1001DF009D843B /* YellowViewController.m */,
 				288374371D0551D600EB8A62 /* ViewController.h */,
 				288374381D0551D600EB8A62 /* ViewController.m */,
+				2827CF621D12493C009D843B /* wangyi.html */,
 				2883743A1D0551D600EB8A62 /* Main.storyboard */,
 				2883743D1D0551D600EB8A62 /* Assets.xcassets */,
 				2883743F1D0551D600EB8A62 /* LaunchScreen.storyboard */,
@@ -265,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				288374411D0551D600EB8A62 /* LaunchScreen.storyboard in Resources */,
+				2827CF631D12493C009D843B /* wangyi.html in Resources */,
 				2883743E1D0551D600EB8A62 /* Assets.xcassets in Resources */,
 				2883743C1D0551D600EB8A62 /* Main.storyboard in Resources */,
 			);

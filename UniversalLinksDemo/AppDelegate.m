@@ -26,10 +26,11 @@
     
     if ([userActivity.activityType isEqualToString:NSUserActivityTypeBrowsingWeb]) {
         NSURL *webpageURL = userActivity.webpageURL;
-        
-        if (![self handleUniversalLinkWithURL:webpageURL]) {
-            NSURL *webUrl = [NSURL URLWithString:@"http://www.pptv.com/"];
-            [[UIApplication sharedApplication] openURL:webUrl];
+        if ([webpageURL.host isEqualToString:@"aplman.com"]) {
+            NSLog(@"已安装应用程序，可以跳转");
+        } else {
+            NSLog(@"没有安装");
+            [[UIApplication sharedApplication]openURL:[NSURL URLWithString:@"http://www.pptv.com/"]];
         }
     }
     return YES;
